@@ -8,7 +8,6 @@
 body {
     font-family: 'PT Sans', sans-serif;
     color: white;
-    background: #202731;
     overflow-x: hidden;
     line-height: 1em;
 }
@@ -70,6 +69,11 @@ section{
     padding-bottom:2em;
 }
 
+.historia{
+  background: #202731;
+  color:#fff;
+}
+
   .hero-image {
     height: 70vh;
     min-height: 500px;
@@ -83,15 +87,38 @@ section{
    margin:0 auto;
   }
 
-  .element {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(-164deg, transparent 75%, #2A80B9 75%, #2A80B9 100%), linear-gradient(164deg, transparent 75%, #2A80B9 75%, #2A80B9 100%), url(http://i.imgur.com/k8BtMvj.jpg);
-    background-size: auto, auto, cover;
-    overflow: hidden;
-  }
+ .intro{
+   font-size:18px;
+   line-height: 1.2em;
+   letter-spacing: 2px;
+ }
+
+ .intro h2{
+   text-align: center;
+   padding:2em;
+ }
+
+  #parallax_uno {
+    color: white;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/descanso.png");
+}
+
+.grid{
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns:3fr 5fr;
+}
+
+.image-grid img{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
  /*=====================MEDIA QUERIES===========================*/ 
   @media screen and (max-width: 952px){
