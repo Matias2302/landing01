@@ -7,7 +7,7 @@
   
 body {
     font-family: 'PT Sans', sans-serif;
-    color: white;
+    
     overflow-x: hidden;
     line-height: 1em;
 }
@@ -15,6 +15,7 @@ body {
   /*======menú======*/
   .menu{
     background-color: #C5974E;
+    color: white;
     height: 75px;
     max-width: 100%;
     display: flex;
@@ -111,6 +112,7 @@ section{
 .grid{
   display:grid;
   grid-gap:1rem;
+  
   grid-template-columns:3fr 5fr;
 }
 
@@ -118,8 +120,26 @@ section{
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover; }
+  object-fit: cover; 
+}
+.contenido-grid{
+  background-color:rgba(34, 34, 34, 0.9);
+}
 
+
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.grid2 img{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; 
+}
  /*=====================MEDIA QUERIES===========================*/ 
   @media screen and (max-width: 952px){
     .logo{
