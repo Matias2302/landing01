@@ -130,8 +130,31 @@ section{
 
 .grid2{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  grid-auto-columns: 1fr;
+  grid-template-areas:  
+  'uno'
+  'dos'
+  'tres'
+  'cuatro'
+  'cinco'
+  'seis';
+}
+
+.grid2:nth-child(1){
+  grid-area:uno;
+}
+
+.grid2:nth-child(2){
+  grid-area:dos;
+}
+
+.grid2:nth-child(3){
+  grid-area: tres;
+}
+
+.grid2:nth-child(4){
+  grid-area: cuatro;
 }
 
 .grid2 img{
@@ -141,6 +164,15 @@ section{
   object-fit: cover; 
 }
  /*=====================MEDIA QUERIES===========================*/ 
+@media screen and (min-width: 50em){
+  .grid2{
+    grid-template-areas:
+      'uno uno dos'
+      'tres cuatro cuatro'
+      'cinco cinco seis'
+  }
+}
+
   @media screen and (max-width: 952px){
     .logo{
       font-size:30px;
